@@ -1,6 +1,5 @@
-
-const http = require('http');
-const { simulateDPE } = require('./Open3CL-main/index.js');
+import http from 'http';
+import { simulateDPE } from './Open3CL-main/index.js';
 
 const server = http.createServer((req, res) => {
   if (req.method === 'POST' && req.url === '/dpe') {
